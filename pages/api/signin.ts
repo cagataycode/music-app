@@ -19,7 +19,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       },
       "itsasecret",
       {
-        expiresIm: "8h",
+        expiresIn: "8h",
       }
     );
 
