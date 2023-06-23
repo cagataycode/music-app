@@ -19,9 +19,9 @@ const GradientLayout = ({
       <Flex bg={`${color}.600`} padding="40px" align="end">
         <Box padding="20px">
           <Image
-            boxSize="250px"
+            boxSize="200px"
             boxShadow="2xl"
-            borderRadius={roundImage ? "100%" : "3px"}
+            borderRadius={roundImage ? "50%" : "3px"}
             src={image}
           />
         </Box>
@@ -33,6 +33,7 @@ const GradientLayout = ({
           <Text fontSize="sm">{description}</Text>
         </Box>
       </Flex>
+      <Box paddingY="50px">{children}</Box>
     </Box>
   );
 };

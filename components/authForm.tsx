@@ -15,7 +15,12 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
     e.preventDefault();
     setIsLoading(true);
 
-    await auth(mode, { email, password });
+    await auth(mode, {
+      email,
+      password,
+      firstName: "",
+      lastName: "",
+    });
     setIsLoading(false);
     router.push("/");
   };
@@ -28,7 +33,7 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
         height="100px"
         borderBottom="white 1px solid"
       >
-        <NextImage src="/spotify.png" height={60} width={120} />
+        <NextImage src="/spotify.svg" height={60} width={120} />
       </Flex>
       <Flex justify="center" align="center" height="calc(100vh - 100px)">
         <Box padding="50px" bg="gray.900" borderRadius="6px">
