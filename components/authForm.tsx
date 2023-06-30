@@ -18,8 +18,6 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
     await auth(mode, {
       email,
       password,
-      firstName: "",
-      lastName: "",
     });
     setIsLoading(false);
     router.push("/");
