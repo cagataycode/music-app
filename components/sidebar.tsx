@@ -53,7 +53,18 @@ const musicMenu = [
 // const playlists = new Array(30).fill(1).map((_, i) => `Playlist ${i + 1}`);
 
 const Sidebar = () => {
-  const { playlists } = usePlaylist();
+  const { playlists, isLoading, isError } = usePlaylist();
+
+  console.log("playlists:", playlists);
+  console.log("playlists type:", typeof playlists);
+
+  if (isLoading) {
+    return <div>Loading...</div>; // You can replace this with a loading spinner or any loading UI.
+  }
+
+  if (isError) {
+    return <div>Error occurred while fetching playlists.</div>; // You can display a proper error message here.
+  }
   return (
     <Box
       width="100%"
