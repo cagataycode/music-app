@@ -28,7 +28,7 @@ const Playlist = ({ playlist }) => {
       description={`${playlist.songs.length} songs`}
       image={`https://picsum.photos/400?random=${playlist.id}`}
     >
-      <div>dfd</div>
+      <SongsTable />
     </GradientLayout>
   );
 };
