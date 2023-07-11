@@ -25,7 +25,7 @@ const Home = ({ artists }) => {
         </Box>
         <Flex>
           {artists.map((artist) => (
-            <Box paddingX="10px" width="20%">
+            <Box paddingX="10px" width="20%" key={artist.id}>
               <Box bg="gray.900" borderRadius="4px" padding="15px" width="100%">
                 <Image
                   src="https://i1.sndcdn.com/avatars-hXCegvaYMoJX7AUW-1EjExg-t500x500.jpg"
