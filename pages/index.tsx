@@ -14,7 +14,7 @@ const Home = ({ artists }) => {
       subtitle="profile"
       title={`${user?.firstName} ${user?.lastName}`}
       description={`${user?.playlistsCount} public playlists`}
-      image="https://i.scdn.co/image/ab6775700000ee85bf7c8e762a94ef76e1c8650d"
+      image="https://picsum.photos/400?random=5"
     >
       <Box color="white" paddingX="40px">
         <Box marginBottom="40px">
@@ -28,7 +28,7 @@ const Home = ({ artists }) => {
             <Box paddingX="10px" width="20%" key={artist.id}>
               <Box bg="gray.900" borderRadius="4px" padding="15px" width="100%">
                 <Image
-                  src="https://i1.sndcdn.com/avatars-hXCegvaYMoJX7AUW-1EjExg-t500x500.jpg"
+                  src="https://picsum.photos/400?random=${playlist.id}"
                   borderRadius="100%"
                 />
                 <Box marginTop="10px">
