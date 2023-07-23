@@ -1,7 +1,6 @@
-import { Box, Flex, Input, Button } from "@chakra-ui/react";
+import { Box, Flex, Input, Button, Link } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { FC, useState } from "react";
-import { useSWRConfig } from "swr";
 import NextImage from "next/image";
 import { auth } from "../lib/mutations";
 
@@ -59,6 +58,12 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
               {mode}
             </Button>
           </form>
+          {router.pathname === "/signin"
+            ? "Don't have an account? "
+            : "Already have an account? "}
+          <Link href={router.pathname === "/signin" ? "/signup" : "/signin"}>
+            {router.pathname === "/signin" ? "Sign Up" : "Sign In"}
+          </Link>
         </Box>
       </Flex>
     </Box>
