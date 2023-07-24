@@ -7,6 +7,8 @@ import { auth } from "../lib/mutations";
 const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
@@ -17,6 +19,8 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
     await auth(mode, {
       email,
       password,
+      firstName,
+      lastName,
     });
     setIsLoading(false);
     router.push("/");
@@ -35,6 +39,16 @@ const AuthForm: FC<{ mode: "signin" | "signup" }> = ({ mode }) => {
       <Flex justify="center" align="center" height="calc(100vh - 100px)">
         <Box padding="50px" bg="gray.900" borderRadius="6px">
           <form onSubmit={handleSubmit}>
+            <Input
+              placeholder="first name"
+              type="string"
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+            <Input
+              placeholder="last name"
+              type="string"
+              onChange={(e) => setLastName(e.target.value)}
+            />
             <Input
               placeholder="email"
               type="email"

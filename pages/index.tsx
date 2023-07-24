@@ -12,7 +12,7 @@ const Home = ({ artists }) => {
       roundImage
       color="pink"
       subtitle="profile"
-      title={`${user?.email}`}
+      title={`${user?.firstName}, ${user?.lastName}`}
       description={`${user?.playlistsCount} public playlists`}
       image="https://picsum.photos/400?random=5"
     >

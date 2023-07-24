@@ -2,12 +2,13 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import cookie from "cookie";
 import { NextApiRequest, NextApiResponse } from "next";
+import { User } from "@prisma/client";
 import prisma from "../../lib/prisma";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { email, password } = req.body;
 
-  const user = await prisma.user.findUnique({
+  const user: User = await prisma.user.findUnique({
     where: { email },
   });
   if (user && bcrypt.compareSync(password, user.password)) {

@@ -3,13 +3,12 @@ export const artistsData: {
   songs: any[];
 }[] = [
   {
-    name: "Glitch",
+    name: "Tenno",
     songs: [
       {
-        name: "Fermi Paradox",
-        duration: 235,
-
-        url: "https://dl.dropboxusercontent.com/s/7xmpwvvek6szx5n/fermi-paradox.mp3?dl=0",
+        name: "Sacred Tree",
+        duration: 150,
+        url: "https://www.dropbox.com/scl/fi/az7jkydkjfj1zaj674ug4/tenno-sacredtree.mp3?rlkey=oflqujshpwu87xqj80mmpv1dw&dl=0",
       },
     ],
   },
@@ -24,12 +23,12 @@ export const artistsData: {
     ],
   },
   {
-    name: "Ben Sound",
+    name: "Kupla",
     songs: [
       {
-        name: "The Elevator Bossa Nova",
-        duration: 238,
-        url: "https://dl.dropboxusercontent.com/s/7dh5o3kfjcz0nh3/The-Elevator-Bossa-Nova.mp3?dl=0",
+        name: "Kingdom In Blue",
+        duration: 201,
+        url: "https://www.dropbox.com/scl/fi/ptdqcmxppoodeqtigmdhy/kupla-kingdominblue.mp3?rlkey=g7zfx676nqv33gsutolqxsefp&dl=0",
       },
     ],
   },
@@ -44,12 +43,12 @@ export const artistsData: {
     ],
   },
   {
-    name: "FSM Team",
+    name: "Haircuts For Men",
     songs: [
       {
-        name: "Eternal Springtime",
-        duration: 302,
-        url: "https://dl.dropboxusercontent.com/s/92u8d427bz0b1t8/eternal-springtime.mp3?dl=0",
+        name: "破壊の塔",
+        duration: 253,
+        url: "https://www.dropbox.com/scl/fi/s8n05dclmgcbcdmbz8xkt/haircutsformen.mp3?rlkey=c5ai2lx9q5npk83arezs1yacq&dl=0",
       },
       {
         name: "Astronaut in a Submarine",

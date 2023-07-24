@@ -38,7 +38,7 @@ const Player = ({ songs, activeSong }) => {
   const setActiveSong = useStoreActions((state: any) => state.changeActiveSong);
 
   useEffect(() => {
-    let timerId;
+    let timerId: number;
 
     if (playing && !isSeeking) {
       const f = () => {
@@ -80,7 +80,7 @@ const Player = ({ songs, activeSong }) => {
   };
 
   const nextSong = () => {
-    setIndex((state) => {
+    setIndex((state: number) => {
       if (shuffle) {
         const next = Math.floor(Math.random() * songs.length);
 
