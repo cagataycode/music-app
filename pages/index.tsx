@@ -28,6 +28,7 @@ const Home = ({ artists }) => {
             <Box paddingX="10px" width="20%" key={artist.id}>
               <Box bg="gray.900" borderRadius="4px" padding="15px" width="100%">
                 <Image
+                  // eslint-disable-next-line no-template-curly-in-string
                   src="https://picsum.photos/400?random=${playlist.id}"
                   borderRadius="100%"
                 />
