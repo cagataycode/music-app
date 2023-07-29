@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# spotify clone music app
 
-First, run the development server:
+fullstack music app
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# key features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* play/stop songs
+* repeat, shuffle
+* play next song, previous song
+* navigate through the song using slider
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# built with
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+* <img src="https://raw.githubusercontent.com/github/explore/28b02bbc9ad9f7a503c43775aebeb515dc2da5fc/topics/nextjs/nextjs.png" width="50px" height="50px" />
+* <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" width="50px" height="50px" />
+* <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" width="50px" height="50px" />
+* <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png" width="50px" height="50px" />
+* Chakra UI
+* Prisma ORM
 
-## Learn More
+# getting started
 
-To learn more about Next.js, take a look at the following resources:
+  ```sh
+  npm install npm@latest -g
+  ```
+  ### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/cagataycode/music-app
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. start the server
+   ```sh
+   npm run dev
+   ```
