@@ -51,6 +51,10 @@
     "prettier": "^2.4.1",
     "ts-node": "^10.4.0"
   },
+  "cacheDirectories": [
+    "node_modules/",
+    ".next/cache/"
+  ],
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   }
